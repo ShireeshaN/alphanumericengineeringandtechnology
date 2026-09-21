@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07101b">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<title>Projects | Alpha Numeric Power</title>
+<meta name="description" content="Representative Alpha Numeric Power project scopes across LT, HT, EHT and UHT infrastructure.">
+<style>
+/* ===== FOUNDATION / TOKENS ===== */
+:root{--ink:#0d121a;--navy:#07101b;--navy-2:#0b1624;--blue:#2e8efd;--gold:#ffde59;--paper:#f5f7fa;--white:#fff;--muted:#6a7687;--line:#dde3ea;--radius:26px;--shadow:0 24px 80px rgba(7,16,27,.12);--ease:cubic-bezier(.2,.75,.2,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--white);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}button,input,textarea{font:inherit}button{color:inherit}::selection{background:var(--gold);color:#0a0d12}.wrap{width:min(1240px,calc(100% - 48px));margin:auto}.eyebrow{font-size:.73rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.section{padding:112px 0}.section-head{display:grid;grid-template-columns:.72fr 1.28fr;gap:48px;align-items:start;margin-bottom:54px}.section-head h2{margin:0;font-size:clamp(2.25rem,4vw,4.7rem);line-height:.98;letter-spacing:-.055em;max-width:900px}.section-head p{margin:8px 0 0;color:var(--muted);font-size:1.06rem;line-height:1.8;max-width:620px}.button{display:inline-flex;align-items:center;gap:12px;min-height:50px;padding:0 21px;border-radius:999px;font-size:.9rem;font-weight:800;letter-spacing:.02em;border:1px solid transparent;transition:.28s var(--ease)}.button.primary{background:var(--gold);color:#11151d}.button.primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(255,222,89,.18)}.button.ghost{border-color:rgba(255,255,255,.3);color:white;background:rgba(7,16,27,.18);backdrop-filter:blur(10px)}.button.dark{background:var(--navy);color:#fff}.button svg{width:17px;height:17px}.reveal{opacity:0;transform:translateY(22px);transition:.75s var(--ease)}.reveal.in{opacity:1;transform:none}.skip{position:fixed;left:16px;top:-80px;z-index:9999;background:#fff;padding:12px 16px;border-radius:10px;box-shadow:var(--shadow)}.skip:focus{top:16px}@media(max-width:860px){.wrap{width:min(100% - 28px,1240px)}.section{padding:80px 0}.section-head{grid-template-columns:1fr;gap:16px;margin-bottom:36px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ===== NAV MODULE : CSS + HTML + SCRIPT ===== -->
+<style>
+.site-nav{position:sticky;top:0;left:0;right:0;z-index:1000;height:86px;transition:.45s var(--ease)}
+.site-nav .nav-shell{height:100%;display:flex;align-items:center;justify-content:space-between;gap:36px}
+.site-nav .brand{display:flex;align-items:center;position:relative;z-index:3;flex:none}
+.site-nav .brand img{width:232px;height:auto;transition:.35s var(--ease)}
+.site-nav .brand .logo-dark{display:block}.site-nav .brand .logo-light{display:none}
+.site-nav ul{list-style:none;padding:0;margin:0;display:flex;align-items:center;gap:30px}
+.site-nav .nav-link{position:relative;padding:31px 0 28px;color:#121823;font-size:.84rem;font-weight:760;letter-spacing:.035em}
+.site-nav .nav-link:after{content:"";position:absolute;left:0;bottom:23px;height:2px;width:0;background:var(--gold);transition:.3s var(--ease)}.site-nav .nav-link:hover:after,.site-nav .nav-link[aria-current="page"]:after{width:100%}
+.site-nav .nav-cta{display:inline-flex;align-items:center;gap:10px;padding:11px 16px 11px 17px;border-radius:999px;background:var(--gold);color:#10141b;font-size:.82rem;font-weight:850;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+.has-menu{position:relative}.menu-trigger{display:flex;align-items:center;gap:7px}.menu-trigger svg{width:11px;transition:.25s var(--ease)}.has-menu:hover .menu-trigger svg{transform:rotate(180deg)}
+.mega{position:absolute;top:67px;left:50%;transform:translate(-50%,10px);width:360px;padding:12px;background:rgba(255,255,255,.98);border:1px solid rgba(15,24,38,.08);border-radius:20px;box-shadow:0 30px 70px rgba(7,16,27,.18);opacity:0;visibility:hidden;transition:.28s var(--ease)}.has-menu:hover .mega,.has-menu:focus-within .mega{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.mega a{display:grid;grid-template-columns:46px 1fr auto;align-items:center;gap:12px;padding:11px;border-radius:13px;color:#141a24;transition:.22s}.mega a:hover{background:#f3f6f9}.mega b{width:46px;height:40px;border:1px solid var(--line);display:grid;place-items:center;border-radius:10px;color:var(--blue);font-size:.75rem}.mega strong{font-size:.86rem}.mega small{display:block;color:#7b8594;font-size:.72rem;margin-top:3px}.mega em{font-style:normal;color:#9aa5b3}
+.menu-btn{display:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;place-items:center;cursor:pointer}.menu-btn span,.menu-btn:before,.menu-btn:after{content:"";display:block;width:18px;height:1.5px;background:#121823;transition:.3s}.menu-btn span{margin:4px 0}
+.inner-nav{background:#fff;border-bottom:1px solid #e9edf2}
+.home-nav.scrolled{height:76px;background:rgba(255,255,255,.94);border-bottom:1px solid #e9edf2;box-shadow:0 10px 40px rgba(9,17,28,.06);backdrop-filter:blur(18px)}.home-nav.scrolled .nav-link{color:#121823}.home-nav.scrolled .brand .logo-light{display:none}.home-nav.scrolled .brand .logo-dark{display:block}.home-nav.scrolled .menu-btn{border-color:var(--line);background:#fff}.home-nav.scrolled .menu-btn span,.home-nav.scrolled .menu-btn:before,.home-nav.scrolled .menu-btn:after{background:#121823}
+@media(max-width:980px){.site-nav{height:74px}.site-nav .brand img{width:190px}.menu-btn{display:grid;position:relative;z-index:3}.site-nav .nav-list{position:fixed;inset:0 0 auto 0;padding:98px 24px 28px;display:block;background:#fff;transform:translateY(-110%);transition:.45s var(--ease);box-shadow:0 30px 80px rgba(7,16,27,.16)}.site-nav.open .nav-list{transform:none}.site-nav ul{display:block}.site-nav li{border-bottom:1px solid #edf0f4}.site-nav .nav-link{display:flex!important;color:#111722!important;padding:17px 4px;font-size:1rem}.site-nav .nav-link:after{display:none}.site-nav .nav-cta{margin-top:18px}.mega{position:static;transform:none!important;opacity:1;visibility:visible;width:100%;box-shadow:none;border:0;padding:0 0 10px;background:transparent;display:grid;grid-template-columns:1fr 1fr;gap:6px}.mega a{padding:9px;background:#f7f9fb}.mega em{display:none}.mega b{width:40px;height:36px}.site-nav.open .menu-btn:before{transform:translateY(5.5px) rotate(45deg)}.site-nav.open .menu-btn span{opacity:0}.site-nav.open .menu-btn:after{transform:translateY(-5.5px) rotate(-45deg)}}
+@media(max-width:580px){.mega{grid-template-columns:1fr}.site-nav .brand img{width:170px}}
+</style>
+<nav class="site-nav inner-nav" id="siteNav" aria-label="Primary navigation">
+  <div class="wrap nav-shell">
+    <a class="brand" href="index.html" aria-label="Alpha Numeric Power home"><img class="logo-light" src="assets/images/logo-white.png" alt="Alpha Numeric Power"><img class="logo-dark" src="assets/images/logo-dark.png" alt="Alpha Numeric Power"></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false"><span></span></button>
+    <div class="nav-list" id="navList"><ul>
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li class="has-menu"><a class="nav-link menu-trigger" href="solutions.html">Solutions <svg viewBox="0 0 12 8"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+        <div class="mega" aria-label="Solutions menu">
+          <a href="lt.html"><b>LT</b><span><strong>Low Tension</strong><small>Up to 11 kV</small></span><em>→</em></a>
+          <a href="ht.html"><b>HT</b><span><strong>High Tension</strong><small>11 kV – 33 kV</small></span><em>→</em></a>
+          <a href="eht.html"><b>EHT</b><span><strong>Extra High Tension</strong><small>132 / 220 / 400 kV</small></span><em>→</em></a>
+          <a href="uht.html"><b>UHT</b><span><strong>Ultra High Tension</strong><small>765 kV</small></span><em>→</em></a>
+        </div></li>
+      <li><a class="nav-link" href="projects.html" aria-current="page">Projects</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li><a class="nav-cta" href="contact.html">Let’s connect <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+    </ul></div>
+  </div>
+</nav>
+<script>
+(()=>{const nav=document.getElementById('siteNav'),btn=document.getElementById('menuBtn');btn?.addEventListener('click',()=>{const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',open);document.body.style.overflow=open?'hidden':''});document.querySelectorAll('.nav-list a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');btn?.setAttribute('aria-expanded','false');document.body.style.overflow=''}));})();
+</script>
+<main id="main">
+<!-- ===== INNER HERO MODULE : CSS + HTML ===== -->
+<style>
+.page-hero{min-height:670px;display:flex;align-items:end;padding:110px 0 84px;background:#07101b url('assets/images/projects-grid.svg') center/cover;color:#fff;position:relative;overflow:hidden}.page-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,9,15,.93) 0%,rgba(4,9,15,.7) 42%,rgba(4,9,15,.18) 75%),linear-gradient(0deg,rgba(4,9,15,.64),transparent 50%)}.page-hero .wrap{position:relative;z-index:1}.page-hero .eyebrow{color:#b7c6d6;margin-bottom:22px}.page-hero h1{font-size:clamp(4rem,8vw,8.5rem);line-height:.84;letter-spacing:-.072em;margin:0;max-width:980px}.page-hero p{max-width:700px;color:#bdc8d4;font-size:1.07rem;line-height:1.75;margin:30px 0 0}@media(max-width:700px){.page-hero{min-height:570px;padding-bottom:58px}.page-hero h1{font-size:clamp(3.5rem,16vw,6rem)}}
+</style>
+<section class="page-hero"><div class="wrap"><div class="eyebrow">PROJECTS · CAPABILITY PORTFOLIO</div><h1>Built across the power chain.</h1><p>Representative project scopes showing how our LT, HT, EHT and UHT capabilities translate into real infrastructure packages.</p></div></section>
+
+<!-- ===== PROJECT FILTER MODULE : CSS + HTML + SCRIPT ===== -->
+<style>.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:34px}.filter-btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:11px 17px;font-weight:800;font-size:.78rem;cursor:pointer;transition:.25s}.filter-btn.active,.filter-btn:hover{background:var(--navy);border-color:var(--navy);color:#fff}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project-card{border:1px solid var(--line);border-radius:25px;overflow:hidden;background:#fff;transition:.4s var(--ease)}.project-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.project-card.hidden{display:none}.project-img{height:310px;background-size:cover;background-position:center;position:relative}.project-img:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,9,15,.55),transparent 60%)}.project-body{padding:28px}.project-body span{font-size:.7rem;color:var(--blue);font-weight:900;letter-spacing:.12em}.project-body h3{font-size:1.65rem;margin:10px 0 9px;letter-spacing:-.035em}.project-body p{margin:0;color:var(--muted);line-height:1.65}.portfolio-note{padding:20px 24px;border-radius:18px;background:#f7f9fb;color:#687585;font-size:.84rem;line-height:1.6;margin-top:20px;border:1px solid var(--line)}@media(max-width:760px){.project-grid{grid-template-columns:1fr}.project-img{height:245px}}</style>
+<section class="section"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">Project categories</div><div><h2>Filter by voltage class.</h2><p>These are representative project scopes rather than client-specific case studies. Client names and confidential site details can be added when approved.</p></div></div><div class="filter-bar reveal" role="group" aria-label="Project filters"><button class="filter-btn active" data-filter="ALL">All</button><button class="filter-btn" data-filter="LT">LT</button><button class="filter-btn" data-filter="HT">HT</button><button class="filter-btn" data-filter="EHT">EHT</button><button class="filter-btn" data-filter="UHT">UHT</button></div><div class="project-grid" id="projectGrid"><article class="project-card reveal" data-class="LT"><div class="project-img" style="background-image:url('assets/images/hero-lt.svg')"></div><div class="project-body"><span>LT</span><h3>Facility Distribution</h3><p>LT distribution, main boards, bus systems and controlled power delivery.</p></div></article><article class="project-card reveal" data-class="HT"><div class="project-img" style="background-image:url('assets/images/hero-ht.svg')"></div><div class="project-body"><span>HT</span><h3>Substation Packages</h3><p>11–33 kV substations with switchgear, transformers, protection and cables.</p></div></article><article class="project-card reveal" data-class="EHT"><div class="project-img" style="background-image:url('assets/images/hero-eht.svg')"></div><div class="project-body"><span>EHT</span><h3>Transmission Corridors</h3><p>132 / 220 / 400 kV lines, structures, substations and protection interfaces.</p></div></article><article class="project-card reveal" data-class="UHT"><div class="project-img" style="background-image:url('assets/images/hero-uht.svg')"></div><div class="project-body"><span>UHT</span><h3>765 kV Grid Interface</h3><p>Ultra-high-voltage transmission scope for high-capacity grid connectivity.</p></div></article><article class="project-card reveal" data-class="HT"><div class="project-img" style="background-image:url('assets/images/hero-ht.svg')"></div><div class="project-body"><span>HT</span><h3>Industrial Power Network</h3><p>Structured medium-voltage distribution for large industrial facilities.</p></div></article><article class="project-card reveal" data-class="EHT"><div class="project-img" style="background-image:url('assets/images/projects-grid.svg')"></div><div class="project-body"><span>EHT</span><h3>Grid Substation Scope</h3><p>High-voltage substation execution, protection and commissioning.</p></div></article></div><div class="portfolio-note reveal">Ready for your actual portfolio: replace any card with approved project name, location, capacity, scope and project images without changing the layout.</div></div></section>
+<script>(()=>{const btns=[...document.querySelectorAll('.filter-btn')],cards=[...document.querySelectorAll('.project-card')];btns.forEach(b=>b.addEventListener('click',()=>{btns.forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;cards.forEach(c=>c.classList.toggle('hidden',f!=='ALL'&&c.dataset.class!==f))}))})();</script>
+<!-- ===== PROJECT CTA MODULE ===== --><style>.project-cta{padding:80px 0;background:var(--gold)}.project-cta .row{display:flex;align-items:center;justify-content:space-between;gap:25px}.project-cta h3{margin:0;font-size:clamp(2rem,4vw,4rem);letter-spacing:-.05em}@media(max-width:650px){.project-cta .row{flex-direction:column;align-items:flex-start}}</style><section class="project-cta"><div class="wrap"><div class="row reveal"><h3>Have a new project scope?</h3><a class="button dark" href="contact.html">Share the requirement <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div></section></main>
+<!-- ===== FOOTER MODULE : CSS + HTML ===== -->
+<style>
+.site-footer{background:#050a11;color:#dce4ee;padding:78px 0 26px;overflow:hidden;position:relative}.site-footer:before{content:"";position:absolute;right:-180px;top:-240px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(46,142,253,.16),transparent 64%)}.foot-top{display:grid;grid-template-columns:1.15fr .72fr 1fr;gap:70px;padding-bottom:58px}.foot-brand img{width:250px;margin-bottom:25px}.foot-brand p{color:#8f9cad;line-height:1.75;max-width:430px;margin:0}.foot-title{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:#788597;margin-bottom:20px;font-weight:850}.foot-links{display:grid;gap:12px}.foot-links a{font-size:.92rem;color:#dce4ee;transition:.2s}.foot-links a:hover{color:var(--gold);transform:translateX(2px)}.foot-contact{font-style:normal;color:#a7b1bf;line-height:1.75;font-size:.92rem}.foot-contact a{display:inline-block;color:#fff;margin-bottom:14px;font-weight:750}.socials{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.socials a{width:37px;height:37px;border:1px solid rgba(255,255,255,.13);border-radius:50%;display:grid;place-items:center;color:#dbe4ef;transition:.25s}.socials a:hover{background:var(--gold);border-color:var(--gold);color:#10141a;transform:translateY(-2px)}.socials span{font-size:.7rem;font-weight:900}.foot-bottom{padding-top:23px;border-top:1px solid rgba(255,255,255,.09);display:flex;justify-content:space-between;gap:20px;color:#687587;font-size:.76rem}@media(max-width:900px){.foot-top{grid-template-columns:1fr 1fr;gap:48px}.foot-brand{grid-column:1/-1}}@media(max-width:590px){.foot-top{grid-template-columns:1fr;gap:34px}.foot-brand{grid-column:auto}.foot-bottom{flex-direction:column}}
+</style>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand"><img src="assets/images/logo-white.png" alt="Alpha Numeric Power"><p>Power infrastructure shaped around precision, reliability and long-term performance — across LT, HT, EHT and UHT systems.</p></div>
+      <div><div class="foot-title">Navigate</div><div class="foot-links"><a href="about.html">About</a><a href="solutions.html">Solutions</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></div></div>
+      <div><div class="foot-title">Let’s connect.</div><address class="foot-contact"><a href="mailto:info@aniplgroup.com">info@aniplgroup.com</a><br>320 Fifth Floor, East Avenue, Ayyappa Society Main Rd, near YSR Statue, SBH Officers Colony, Mega Hills, Madhapur, Hyderabad, Telangana 500081</address>
+<div class="socials" aria-label="Social media">
+  <a href="#" aria-label="Instagram" title="Instagram"><span>IG</span></a>
+  <a href="#" aria-label="Facebook" title="Facebook"><span>f</span></a>
+  <a href="#" aria-label="LinkedIn" title="LinkedIn"><span>in</span></a>
+  <a href="#" aria-label="X" title="X"><span>X</span></a>
+  <a href="#" aria-label="YouTube" title="YouTube"><span>▶</span></a>
+  <a href="#" aria-label="Pinterest" title="Pinterest"><span>P</span></a>
+  <a href="#" aria-label="Threads" title="Threads"><span>@</span></a>
+</div></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Alpha Numeric Power. All rights reserved.</span><span>LT · HT · EHT · UHT</span></div>
+  </div>
+</footer>
+<script>
+(()=>{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));})();
+</script>
+</body></html>
